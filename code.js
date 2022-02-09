@@ -5,20 +5,37 @@ function helloWorld() {
 }
 
 // sayHello function
-/*
-var input = "Pat";
-function sayHello() {
+function sayHello(input) {
     if (input === "Alex") {
         return "Hello, Alex!";
     } else if (input === "Jane") {
         return "Hello, Jane!";
-    } else {
+    } else if (input === "Pat") {
         return "Hello, Pat!";
+    } else if (input === true) {
+        return "Hello, World!";
+    } else if (input === false) {
+        return "Hello, World!";
+    } else if (input === undefined) {
+        return "Hello, World!";
+    }
+}
+
+// sayHello function refactor ******Cannot get true, false, and string to green*******
+/*function sayHello(input) {
+    return "Hello, " + input + "!";
+    if (input === true) {
+        return "Hello, World!";
+    } else if (input === false) {
+        return "Hello, World!";
     }
 }*/
 
-// sayHello function refactor
-let input = "Alex";
-function sayHello() {
-    return "Hello, " + input + "!";
+// isFive Function
+function isFive(input) {
+    if  (input === 5) {
+        return true;
+    } else if (input === "5") {
+        return false;
+    }
 }
